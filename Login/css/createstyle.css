@@ -1,0 +1,121 @@
+﻿body {
+    background: #e7ebf2;
+}
+.table-item{
+    background:#ffffff;
+     border-radius:5px;  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.table-item-bottom{
+       background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.container-tb>td{
+    margin:50px;
+}
+.item-text{
+    color:#777;
+    padding:5px;
+     font-weight:500;
+}
+.item-text>a:hover{
+    text-decoration:none;
+}
+.privacy-text{
+    padding:12px 0;
+       color:#777;
+}
+.privacy-text>a{
+    color:#777;
+    font-weight:700;
+
+}
+ .privacy-text>a:hover{
+     text-decoration:none;
+ }
+.creat-text{
+     padding:10%;
+     color: #d10869;
+     font-size:17px;
+     font-weight:600;
+}
+@media (min-width: 992px) {
+    .creat-text{
+ 
+     
+}
+    .table-item{
+        margin-top:5%;
+       width:700px;
+
+       margin:auto;
+
+    }
+}
+.nav-top{
+        background-color: #d10869;
+}
+.brand-text{
+    
+    font-family:Blackadder ITC;
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
+}
+
+.text-box{
+    display: block;
+  width: 75%;
+  
+  margin:3px 45px;
+  padding: 6px 12px;
+  font-size: 14px;
+
+  color: #555;
+background: #fafafa;
+  background-image: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  
+}
+.Sign-up-btn{
+    padding:0px 30px;
+  
+ 
+  color:#fff;
+      background: #3897f0;
+    border-color: #3897f0;
+   
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+ 
+  white-space: nowrap;
+  vertical-align: middle;
+  
+  cursor: pointer;
+  
+          margin-top:10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+      -webkit-appearance: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+    width: 77%;
+}

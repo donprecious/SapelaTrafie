@@ -1,0 +1,1393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Tafias_blogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AllNewsTb">
+          <Key>
+            <PropertyRef Name="AllNewsID" />
+          </Key>
+          <Property Name="AllNewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="body" Type="varchar(max)" />
+          <Property Name="caption" Type="varchar(max)" />
+          <Property Name="AllNewsTbID" Type="varchar(max)" />
+          <Property Name="video" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Date_time" Type="varchar(max)" />
+          <Property Name="Photo2" Type="varchar(max)" />
+          <Property Name="Photo3" Type="varchar(max)" />
+          <Property Name="Likes" Type="varchar(max)" />
+          <Property Name="Category" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Breaking_NewsTb">
+          <Key>
+            <PropertyRef Name="Breaking_NewsID" />
+          </Key>
+          <Property Name="Breaking_NewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Video" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="Admin_Photo" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" />
+          <Property Name="Views" Type="varchar(max)" />
+          <Property Name="Breaking_NewsTbID" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="commentTb">
+          <Key>
+            <PropertyRef Name="commentID" />
+          </Key>
+          <Property Name="commentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="commentTbId" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Connection_Tb">
+          <Key>
+            <PropertyRef Name="ContentID" />
+          </Key>
+          <Property Name="ContentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SportId" Type="int" />
+          <Property Name="HealthID" Type="int" />
+          <Property Name="breakingNewsID" Type="int" />
+          <Property Name="SapeleNewsID" Type="int" />
+          <Property Name="WisdomQuoteID" Type="int" />
+          <Property Name="Politices" Type="int" />
+          <Property Name="Int" Type="int" />
+        </EntityType>
+        <EntityType Name="FollowTb">
+          <Key>
+            <PropertyRef Name="FollowID" />
+          </Key>
+          <Property Name="FollowID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="FollowUserID" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="HealthTb">
+          <Key>
+            <PropertyRef Name="Health_and_True_Life_StoryID" />
+          </Key>
+          <Property Name="Health_and_True_Life_StoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Video" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="Admin_Photo" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" />
+          <Property Name="Views" Type="varchar(max)" />
+          <Property Name="Health_and_True_Life_StoryTbID" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="messageTb">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="MessageTbID" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NewsPostTb">
+          <Key>
+            <PropertyRef Name="NewsPostID" />
+          </Key>
+          <Property Name="NewsPostID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="NewsPostTbID" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Photo2" Type="varchar(max)" />
+          <Property Name="Photo3" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="NotificationTB">
+          <Key>
+            <PropertyRef Name="NotificationID" />
+          </Key>
+          <Property Name="NotificationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="NotificationTbID" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PoliticsTb">
+          <Key>
+            <PropertyRef Name="PoliticsID" />
+          </Key>
+          <Property Name="PoliticsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Video" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="Admin_Photo" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" />
+          <Property Name="Views" Type="varchar(max)" />
+          <Property Name="PoliticsTbID" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="QuotesTb">
+          <Key>
+            <PropertyRef Name="Wisdom_QuotesID" />
+          </Key>
+          <Property Name="Wisdom_QuotesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" Nullable="false" />
+          <Property Name="Video" Type="varchar(max)" Nullable="false" />
+          <Property Name="Title" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varchar(max)" Nullable="false" />
+          <Property Name="Admin_Photo" Type="varchar(max)" Nullable="false" />
+          <Property Name="Admin_Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" Nullable="false" />
+          <Property Name="Views" Type="varchar(max)" Nullable="false" />
+          <Property Name="WisdomQuoteTbID" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegistrationTb">
+          <Key>
+            <PropertyRef Name="RegistrationID" />
+          </Key>
+          <Property Name="RegistrationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="First_Name" Type="varchar" MaxLength="120" />
+          <Property Name="Last_name" Type="varchar" MaxLength="120" />
+          <Property Name="Email" Type="varchar" MaxLength="120" />
+          <Property Name="Password" Type="varchar" MaxLength="120" />
+          <Property Name="RegisterID" Type="varchar(max)" />
+          <Property Name="Time_date" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Sapele_NewsTb">
+          <Key>
+            <PropertyRef Name="Sapele_NewsID" />
+          </Key>
+          <Property Name="Sapele_NewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Video" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="Admin_Photo" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" />
+          <Property Name="Views" Type="varchar(max)" />
+          <Property Name="Sapele_NewsTbID" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="SportTb">
+          <Key>
+            <PropertyRef Name="SportID" />
+          </Key>
+          <Property Name="SportID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Photo" Type="varchar(max)" Nullable="false" />
+          <Property Name="Video" Type="varchar(max)" Nullable="false" />
+          <Property Name="Title" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varchar(max)" Nullable="false" />
+          <Property Name="Admin_Photo" Type="varchar(max)" Nullable="false" />
+          <Property Name="Admin_Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" Nullable="false" />
+          <Property Name="Sport_Views" Type="varchar(max)" />
+          <Property Name="SportTbID" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="UserTb">
+          <Key>
+            <PropertyRef Name="Users" />
+          </Key>
+          <Property Name="Users" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar(max)" />
+          <Property Name="Her_Comment" Type="varchar(max)" />
+          <Property Name="His_comment" Type="varchar(max)" />
+          <Property Name="client_comment" Type="varchar(max)" />
+          <Property Name="body_commet" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="UserChatId" Type="varchar(max)" />
+          <Property Name="Other_isues" Type="varchar(max)" />
+          <Property Name="Date_Time" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="VideoTb">
+          <Key>
+            <PropertyRef Name="VideosID" />
+          </Key>
+          <Property Name="VideosID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Video" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body" Type="varchar(max)" />
+          <Property Name="Admin_Photo" Type="varchar(max)" />
+          <Property Name="Admin_Name" Type="varchar(max)" />
+          <Property Name="Time_and_Date" Type="varchar" MaxLength="50" />
+          <Property Name="Likes_and_comments" Type="varchar(max)" />
+          <Property Name="Views" Type="varchar(max)" />
+          <Property Name="VideoTbID" Type="varchar(max)" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_AllNewsTb">
+          <End Role="AllNewsTb" Type="Self.AllNewsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AllNewsTb">
+              <PropertyRef Name="AllNewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_Breaking_NewsTb">
+          <End Role="Breaking_NewsTb" Type="Self.Breaking_NewsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Breaking_NewsTb">
+              <PropertyRef Name="Breaking_NewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="breakingNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_commentTb">
+          <End Role="commentTb" Type="Self.commentTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="commentTb">
+              <PropertyRef Name="commentID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_FollowTb">
+          <End Role="FollowTb" Type="Self.FollowTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FollowTb">
+              <PropertyRef Name="FollowID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_HealthTb">
+          <End Role="HealthTb" Type="Self.HealthTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HealthTb">
+              <PropertyRef Name="Health_and_True_Life_StoryID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="HealthID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_messageTb">
+          <End Role="messageTb" Type="Self.messageTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="messageTb">
+              <PropertyRef Name="MessageID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_NewsPostTb">
+          <End Role="NewsPostTb" Type="Self.NewsPostTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewsPostTb">
+              <PropertyRef Name="NewsPostID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_NotificationTB">
+          <End Role="NotificationTB" Type="Self.NotificationTB" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTB">
+              <PropertyRef Name="NotificationID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Politices" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_PoliticsTb">
+          <End Role="PoliticsTb" Type="Self.PoliticsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PoliticsTb">
+              <PropertyRef Name="PoliticsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Politices" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_QuotesTb">
+          <End Role="QuotesTb" Type="Self.QuotesTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="QuotesTb">
+              <PropertyRef Name="Wisdom_QuotesID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="WisdomQuoteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_RegistrationTb">
+          <End Role="RegistrationTb" Type="Self.RegistrationTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationTb">
+              <PropertyRef Name="RegistrationID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_RegistrationTb1">
+          <End Role="RegistrationTb" Type="Self.RegistrationTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationTb">
+              <PropertyRef Name="RegistrationID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_Sapele_NewsTb">
+          <End Role="Sapele_NewsTb" Type="Self.Sapele_NewsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sapele_NewsTb">
+              <PropertyRef Name="Sapele_NewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="SapeleNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_SportTb">
+          <End Role="SportTb" Type="Self.SportTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportTb">
+              <PropertyRef Name="SportID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="SportId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_UserTb">
+          <End Role="UserTb" Type="Self.UserTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserTb">
+              <PropertyRef Name="Users" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_VideoTb">
+          <End Role="VideoTb" Type="Self.VideoTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VideoTb">
+              <PropertyRef Name="VideosID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="breakingNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Tafias_blogModelStoreContainer">
+          <EntitySet Name="AllNewsTb" EntityType="Self.AllNewsTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Breaking_NewsTb" EntityType="Self.Breaking_NewsTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="commentTb" EntityType="Self.commentTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Connection_Tb" EntityType="Self.Connection_Tb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FollowTb" EntityType="Self.FollowTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HealthTb" EntityType="Self.HealthTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="messageTb" EntityType="Self.messageTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NewsPostTb" EntityType="Self.NewsPostTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NotificationTB" EntityType="Self.NotificationTB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PoliticsTb" EntityType="Self.PoliticsTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QuotesTb" EntityType="Self.QuotesTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistrationTb" EntityType="Self.RegistrationTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sapele_NewsTb" EntityType="Self.Sapele_NewsTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SportTb" EntityType="Self.SportTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserTb" EntityType="Self.UserTb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VideoTb" EntityType="Self.VideoTb" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Connection_Tb_AllNewsTb" Association="Self.FK_Connection_Tb_AllNewsTb">
+            <End Role="AllNewsTb" EntitySet="AllNewsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_Breaking_NewsTb" Association="Self.FK_Connection_Tb_Breaking_NewsTb">
+            <End Role="Breaking_NewsTb" EntitySet="Breaking_NewsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_commentTb" Association="Self.FK_Connection_Tb_commentTb">
+            <End Role="commentTb" EntitySet="commentTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_FollowTb" Association="Self.FK_Connection_Tb_FollowTb">
+            <End Role="FollowTb" EntitySet="FollowTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_HealthTb" Association="Self.FK_Connection_Tb_HealthTb">
+            <End Role="HealthTb" EntitySet="HealthTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_messageTb" Association="Self.FK_Connection_Tb_messageTb">
+            <End Role="messageTb" EntitySet="messageTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_NewsPostTb" Association="Self.FK_Connection_Tb_NewsPostTb">
+            <End Role="NewsPostTb" EntitySet="NewsPostTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_NotificationTB" Association="Self.FK_Connection_Tb_NotificationTB">
+            <End Role="NotificationTB" EntitySet="NotificationTB" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_PoliticsTb" Association="Self.FK_Connection_Tb_PoliticsTb">
+            <End Role="PoliticsTb" EntitySet="PoliticsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_QuotesTb" Association="Self.FK_Connection_Tb_QuotesTb">
+            <End Role="QuotesTb" EntitySet="QuotesTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_RegistrationTb" Association="Self.FK_Connection_Tb_RegistrationTb">
+            <End Role="RegistrationTb" EntitySet="RegistrationTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_RegistrationTb1" Association="Self.FK_Connection_Tb_RegistrationTb1">
+            <End Role="RegistrationTb" EntitySet="RegistrationTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_Sapele_NewsTb" Association="Self.FK_Connection_Tb_Sapele_NewsTb">
+            <End Role="Sapele_NewsTb" EntitySet="Sapele_NewsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_SportTb" Association="Self.FK_Connection_Tb_SportTb">
+            <End Role="SportTb" EntitySet="SportTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_UserTb" Association="Self.FK_Connection_Tb_UserTb">
+            <End Role="UserTb" EntitySet="UserTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_VideoTb" Association="Self.FK_Connection_Tb_VideoTb">
+            <End Role="VideoTb" EntitySet="VideoTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Tafias_blogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Breaking_NewsTb">
+          <Key>
+            <PropertyRef Name="Breaking_NewsID" />
+          </Key>
+          <Property Name="Breaking_NewsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Breaking_NewsTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_Breaking_NewsTb" FromRole="Breaking_NewsTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="Connection_Tb">
+          <Key>
+            <PropertyRef Name="ContentID" />
+          </Key>
+          <Property Name="ContentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SportId" Type="Int32" />
+          <Property Name="HealthID" Type="Int32" />
+          <Property Name="breakingNewsID" Type="Int32" />
+          <Property Name="SapeleNewsID" Type="Int32" />
+          <Property Name="WisdomQuoteID" Type="Int32" />
+          <Property Name="Politices" Type="Int32" />
+          <Property Name="Int" Type="Int32" />
+          <NavigationProperty Name="Breaking_NewsTb" Relationship="Self.FK_Connection_Tb_Breaking_NewsTb" FromRole="Connection_Tb" ToRole="Breaking_NewsTb" />
+          <NavigationProperty Name="HealthTb" Relationship="Self.FK_Connection_Tb_HealthTb" FromRole="Connection_Tb" ToRole="HealthTb" />
+          <NavigationProperty Name="PoliticsTb" Relationship="Self.FK_Connection_Tb_PoliticsTb" FromRole="Connection_Tb" ToRole="PoliticsTb" />
+          <NavigationProperty Name="QuotesTb" Relationship="Self.FK_Connection_Tb_QuotesTb" FromRole="Connection_Tb" ToRole="QuotesTb" />
+          <NavigationProperty Name="Sapele_NewsTb" Relationship="Self.FK_Connection_Tb_Sapele_NewsTb" FromRole="Connection_Tb" ToRole="Sapele_NewsTb" />
+          <NavigationProperty Name="SportTb" Relationship="Self.FK_Connection_Tb_SportTb" FromRole="Connection_Tb" ToRole="SportTb" />
+          <NavigationProperty Name="VideoTb" Relationship="Self.FK_Connection_Tb_VideoTb" FromRole="Connection_Tb" ToRole="VideoTb" />
+          <NavigationProperty Name="RegistrationTb" Relationship="Tafias_blogModel.FK_Connection_Tb_RegistrationTb" FromRole="Connection_Tb" ToRole="RegistrationTb" />
+          <NavigationProperty Name="AllNewsTb" Relationship="Tafias_blogModel.FK_Connection_Tb_AllNewsTb" FromRole="Connection_Tb" ToRole="AllNewsTb" />
+          <NavigationProperty Name="commentTb" Relationship="Tafias_blogModel.FK_Connection_Tb_commentTb" FromRole="Connection_Tb" ToRole="commentTb" />
+          <NavigationProperty Name="FollowTb" Relationship="Tafias_blogModel.FK_Connection_Tb_FollowTb" FromRole="Connection_Tb" ToRole="FollowTb" />
+          <NavigationProperty Name="messageTb" Relationship="Tafias_blogModel.FK_Connection_Tb_messageTb" FromRole="Connection_Tb" ToRole="messageTb" />
+          <NavigationProperty Name="NewsPostTb" Relationship="Tafias_blogModel.FK_Connection_Tb_NewsPostTb" FromRole="Connection_Tb" ToRole="NewsPostTb" />
+          <NavigationProperty Name="NotificationTB" Relationship="Tafias_blogModel.FK_Connection_Tb_NotificationTB" FromRole="Connection_Tb" ToRole="NotificationTB" />
+          <NavigationProperty Name="UserTb" Relationship="Tafias_blogModel.FK_Connection_Tb_UserTb" FromRole="Connection_Tb" ToRole="UserTb" />
+        </EntityType>
+        <EntityType Name="HealthTb">
+          <Key>
+            <PropertyRef Name="Health_and_True_Life_StoryID" />
+          </Key>
+          <Property Name="Health_and_True_Life_StoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Health_and_True_Life_StoryTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_HealthTb" FromRole="HealthTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="PoliticsTb">
+          <Key>
+            <PropertyRef Name="PoliticsID" />
+          </Key>
+          <Property Name="PoliticsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PoliticsTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_PoliticsTb" FromRole="PoliticsTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="QuotesTb">
+          <Key>
+            <PropertyRef Name="Wisdom_QuotesID" />
+          </Key>
+          <Property Name="Wisdom_QuotesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WisdomQuoteTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_QuotesTb" FromRole="QuotesTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="Sapele_NewsTb">
+          <Key>
+            <PropertyRef Name="Sapele_NewsID" />
+          </Key>
+          <Property Name="Sapele_NewsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sapele_NewsTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_Sapele_NewsTb" FromRole="Sapele_NewsTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="SportTb">
+          <Key>
+            <PropertyRef Name="SportID" />
+          </Key>
+          <Property Name="SportID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sport_Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SportTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_SportTb" FromRole="SportTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="VideoTb">
+          <Key>
+            <PropertyRef Name="VideosID" />
+          </Key>
+          <Property Name="VideosID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Time_and_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Likes_and_comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Views" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="VideoTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Self.FK_Connection_Tb_VideoTb" FromRole="VideoTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_Breaking_NewsTb">
+          <End Role="Breaking_NewsTb" Type="Self.Breaking_NewsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Breaking_NewsTb">
+              <PropertyRef Name="Breaking_NewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="breakingNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_HealthTb">
+          <End Role="HealthTb" Type="Self.HealthTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HealthTb">
+              <PropertyRef Name="Health_and_True_Life_StoryID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="HealthID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_PoliticsTb">
+          <End Role="PoliticsTb" Type="Self.PoliticsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PoliticsTb">
+              <PropertyRef Name="PoliticsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Politices" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_QuotesTb">
+          <End Role="QuotesTb" Type="Self.QuotesTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="QuotesTb">
+              <PropertyRef Name="Wisdom_QuotesID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="WisdomQuoteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_Sapele_NewsTb">
+          <End Role="Sapele_NewsTb" Type="Self.Sapele_NewsTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sapele_NewsTb">
+              <PropertyRef Name="Sapele_NewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="SapeleNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_SportTb">
+          <End Role="SportTb" Type="Self.SportTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SportTb">
+              <PropertyRef Name="SportID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="SportId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_VideoTb">
+          <End Role="VideoTb" Type="Self.VideoTb" Multiplicity="0..1" />
+          <End Role="Connection_Tb" Type="Self.Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VideoTb">
+              <PropertyRef Name="VideosID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="breakingNewsID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Tafias_blogDb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Breaking_NewsTb" EntityType="Self.Breaking_NewsTb" />
+          <EntitySet Name="Connection_Tb" EntityType="Self.Connection_Tb" />
+          <EntitySet Name="HealthTbs" EntityType="Self.HealthTb" />
+          <EntitySet Name="PoliticsTbs" EntityType="Self.PoliticsTb" />
+          <EntitySet Name="QuotesTbs" EntityType="Self.QuotesTb" />
+          <EntitySet Name="Sapele_NewsTb" EntityType="Self.Sapele_NewsTb" />
+          <EntitySet Name="SportTbs" EntityType="Self.SportTb" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="VideoTbs" EntityType="Self.VideoTb" />
+          <AssociationSet Name="FK_Connection_Tb_Breaking_NewsTb" Association="Self.FK_Connection_Tb_Breaking_NewsTb">
+            <End Role="Breaking_NewsTb" EntitySet="Breaking_NewsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_HealthTb" Association="Self.FK_Connection_Tb_HealthTb">
+            <End Role="HealthTb" EntitySet="HealthTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_PoliticsTb" Association="Self.FK_Connection_Tb_PoliticsTb">
+            <End Role="PoliticsTb" EntitySet="PoliticsTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_QuotesTb" Association="Self.FK_Connection_Tb_QuotesTb">
+            <End Role="QuotesTb" EntitySet="QuotesTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_Sapele_NewsTb" Association="Self.FK_Connection_Tb_Sapele_NewsTb">
+            <End Role="Sapele_NewsTb" EntitySet="Sapele_NewsTb" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_SportTb" Association="Self.FK_Connection_Tb_SportTb">
+            <End Role="SportTb" EntitySet="SportTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_VideoTb" Association="Self.FK_Connection_Tb_VideoTb">
+            <End Role="VideoTb" EntitySet="VideoTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <EntitySet Name="RegistrationTbs" EntityType="Tafias_blogModel.RegistrationTb" />
+          <AssociationSet Name="FK_Connection_Tb_RegistrationTb" Association="Tafias_blogModel.FK_Connection_Tb_RegistrationTb">
+            <End Role="RegistrationTb" EntitySet="RegistrationTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <EntitySet Name="AllNewsTbs" EntityType="Tafias_blogModel.AllNewsTb" />
+          <AssociationSet Name="FK_Connection_Tb_AllNewsTb" Association="Tafias_blogModel.FK_Connection_Tb_AllNewsTb">
+            <End Role="AllNewsTb" EntitySet="AllNewsTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <EntitySet Name="commentTbs" EntityType="Tafias_blogModel.commentTb" />
+          <AssociationSet Name="FK_Connection_Tb_commentTb" Association="Tafias_blogModel.FK_Connection_Tb_commentTb">
+            <End Role="commentTb" EntitySet="commentTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <EntitySet Name="FollowTbs" EntityType="Tafias_blogModel.FollowTb" />
+          <EntitySet Name="messageTbs" EntityType="Tafias_blogModel.messageTb" />
+          <EntitySet Name="NewsPostTbs" EntityType="Tafias_blogModel.NewsPostTb" />
+          <EntitySet Name="NotificationTBs" EntityType="Tafias_blogModel.NotificationTB" />
+          <EntitySet Name="UserTbs" EntityType="Tafias_blogModel.UserTb" />
+          <AssociationSet Name="FK_Connection_Tb_FollowTb" Association="Tafias_blogModel.FK_Connection_Tb_FollowTb">
+            <End Role="FollowTb" EntitySet="FollowTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_messageTb" Association="Tafias_blogModel.FK_Connection_Tb_messageTb">
+            <End Role="messageTb" EntitySet="messageTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_NewsPostTb" Association="Tafias_blogModel.FK_Connection_Tb_NewsPostTb">
+            <End Role="NewsPostTb" EntitySet="NewsPostTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_NotificationTB" Association="Tafias_blogModel.FK_Connection_Tb_NotificationTB">
+            <End Role="NotificationTB" EntitySet="NotificationTBs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Connection_Tb_UserTb" Association="Tafias_blogModel.FK_Connection_Tb_UserTb">
+            <End Role="UserTb" EntitySet="UserTbs" />
+            <End Role="Connection_Tb" EntitySet="Connection_Tb" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="RegistrationTb">
+          <Key>
+            <PropertyRef Name="RegistrationID" />
+          </Key>
+          <Property Name="RegistrationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="Last_name" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="RegisterID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_RegistrationTb" FromRole="RegistrationTb" ToRole="Connection_Tb" />
+          <Property Name="Time_date" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_RegistrationTb">
+          <End Type="Tafias_blogModel.RegistrationTb" Role="RegistrationTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistrationTb">
+              <PropertyRef Name="RegistrationID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AllNewsTb">
+          <Key>
+            <PropertyRef Name="AllNewsID" />
+          </Key>
+          <Property Name="AllNewsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="caption" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AllNewsTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="video" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_time" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_AllNewsTb" FromRole="AllNewsTb" ToRole="Connection_Tb" />
+          <Property Name="Photo2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Photo3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Likes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_AllNewsTb">
+          <End Type="Tafias_blogModel.AllNewsTb" Role="AllNewsTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AllNewsTb">
+              <PropertyRef Name="AllNewsID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="commentTb">
+          <Key>
+            <PropertyRef Name="commentID" />
+          </Key>
+          <Property Name="commentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="commentTbId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_commentTb" FromRole="commentTb" ToRole="Connection_Tb" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_commentTb">
+          <End Type="Tafias_blogModel.commentTb" Role="commentTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="commentTb">
+              <PropertyRef Name="commentID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="FollowTb">
+          <Key>
+            <PropertyRef Name="FollowID" />
+          </Key>
+          <Property Name="FollowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FollowUserID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_FollowTb" FromRole="FollowTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="messageTb">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MessageTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_messageTb" FromRole="messageTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="NewsPostTb">
+          <Key>
+            <PropertyRef Name="NewsPostID" />
+          </Key>
+          <Property Name="NewsPostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="NewsPostTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Photo2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Photo3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_NewsPostTb" FromRole="NewsPostTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="NotificationTB">
+          <Key>
+            <PropertyRef Name="NotificationID" />
+          </Key>
+          <Property Name="NotificationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="NotificationTbID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_NotificationTB" FromRole="NotificationTB" ToRole="Connection_Tb" />
+        </EntityType>
+        <EntityType Name="UserTb">
+          <Key>
+            <PropertyRef Name="Users" />
+          </Key>
+          <Property Name="Users" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Her_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="His_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="client_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="body_commet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserChatId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Other_isues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Connection_Tb" Relationship="Tafias_blogModel.FK_Connection_Tb_UserTb" FromRole="UserTb" ToRole="Connection_Tb" />
+        </EntityType>
+        <Association Name="FK_Connection_Tb_FollowTb">
+          <End Type="Tafias_blogModel.FollowTb" Role="FollowTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FollowTb">
+              <PropertyRef Name="FollowID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_messageTb">
+          <End Type="Tafias_blogModel.messageTb" Role="messageTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="messageTb">
+              <PropertyRef Name="MessageID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_NewsPostTb">
+          <End Type="Tafias_blogModel.NewsPostTb" Role="NewsPostTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewsPostTb">
+              <PropertyRef Name="NewsPostID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_NotificationTB">
+          <End Type="Tafias_blogModel.NotificationTB" Role="NotificationTB" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NotificationTB">
+              <PropertyRef Name="NotificationID" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Politices" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Connection_Tb_UserTb">
+          <End Type="Tafias_blogModel.UserTb" Role="UserTb" Multiplicity="0..1" />
+          <End Type="Tafias_blogModel.Connection_Tb" Role="Connection_Tb" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserTb">
+              <PropertyRef Name="Users" />
+            </Principal>
+            <Dependent Role="Connection_Tb">
+              <PropertyRef Name="Int" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Tafias_blogModelStoreContainer" CdmEntityContainer="Tafias_blogDb">
+          <EntitySetMapping Name="Breaking_NewsTb">
+            <EntityTypeMapping TypeName="Tafias_blogModel.Breaking_NewsTb">
+              <MappingFragment StoreEntitySet="Breaking_NewsTb">
+                <ScalarProperty Name="Breaking_NewsID" ColumnName="Breaking_NewsID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="Breaking_NewsTbID" ColumnName="Breaking_NewsTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Connection_Tb">
+            <EntityTypeMapping TypeName="Tafias_blogModel.Connection_Tb">
+              <MappingFragment StoreEntitySet="Connection_Tb">
+                <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+                <ScalarProperty Name="SportId" ColumnName="SportId" />
+                <ScalarProperty Name="HealthID" ColumnName="HealthID" />
+                <ScalarProperty Name="breakingNewsID" ColumnName="breakingNewsID" />
+                <ScalarProperty Name="SapeleNewsID" ColumnName="SapeleNewsID" />
+                <ScalarProperty Name="WisdomQuoteID" ColumnName="WisdomQuoteID" />
+                <ScalarProperty Name="Politices" ColumnName="Politices" />
+                <ScalarProperty Name="Int" ColumnName="Int" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HealthTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.HealthTb">
+              <MappingFragment StoreEntitySet="HealthTb">
+                <ScalarProperty Name="Health_and_True_Life_StoryID" ColumnName="Health_and_True_Life_StoryID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="Health_and_True_Life_StoryTbID" ColumnName="Health_and_True_Life_StoryTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PoliticsTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.PoliticsTb">
+              <MappingFragment StoreEntitySet="PoliticsTb">
+                <ScalarProperty Name="PoliticsID" ColumnName="PoliticsID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="PoliticsTbID" ColumnName="PoliticsTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuotesTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.QuotesTb">
+              <MappingFragment StoreEntitySet="QuotesTb">
+                <ScalarProperty Name="Wisdom_QuotesID" ColumnName="Wisdom_QuotesID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="WisdomQuoteTbID" ColumnName="WisdomQuoteTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sapele_NewsTb">
+            <EntityTypeMapping TypeName="Tafias_blogModel.Sapele_NewsTb">
+              <MappingFragment StoreEntitySet="Sapele_NewsTb">
+                <ScalarProperty Name="Sapele_NewsID" ColumnName="Sapele_NewsID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="Sapele_NewsTbID" ColumnName="Sapele_NewsTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SportTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.SportTb">
+              <MappingFragment StoreEntitySet="SportTb">
+                <ScalarProperty Name="SportID" ColumnName="SportID" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Sport_Views" ColumnName="Sport_Views" />
+                <ScalarProperty Name="SportTbID" ColumnName="SportTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Tafias_blogModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VideoTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.VideoTb">
+              <MappingFragment StoreEntitySet="VideoTb">
+                <ScalarProperty Name="VideosID" ColumnName="VideosID" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Admin_Photo" ColumnName="Admin_Photo" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Time_and_Date" ColumnName="Time_and_Date" />
+                <ScalarProperty Name="Likes_and_comments" ColumnName="Likes_and_comments" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="VideoTbID" ColumnName="VideoTbID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistrationTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.RegistrationTb">
+              <MappingFragment StoreEntitySet="RegistrationTb">
+                <ScalarProperty Name="Time_date" ColumnName="Time_date" />
+                <ScalarProperty Name="RegisterID" ColumnName="RegisterID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Last_name" ColumnName="Last_name" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AllNewsTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.AllNewsTb">
+              <MappingFragment StoreEntitySet="AllNewsTb">
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Likes" ColumnName="Likes" />
+                <ScalarProperty Name="Photo3" ColumnName="Photo3" />
+                <ScalarProperty Name="Photo2" ColumnName="Photo2" />
+                <ScalarProperty Name="Date_time" ColumnName="Date_time" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="video" ColumnName="video" />
+                <ScalarProperty Name="AllNewsTbID" ColumnName="AllNewsTbID" />
+                <ScalarProperty Name="caption" ColumnName="caption" />
+                <ScalarProperty Name="body" ColumnName="body" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="AllNewsID" ColumnName="AllNewsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="commentTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.commentTb">
+              <MappingFragment StoreEntitySet="commentTb">
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="commentTbId" ColumnName="commentTbId" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="commentID" ColumnName="commentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FollowTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.FollowTb">
+              <MappingFragment StoreEntitySet="FollowTb">
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="FollowUserID" ColumnName="FollowUserID" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="FollowID" ColumnName="FollowID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="messageTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.messageTb">
+              <MappingFragment StoreEntitySet="messageTb">
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="MessageTbID" ColumnName="MessageTbID" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsPostTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.NewsPostTb">
+              <MappingFragment StoreEntitySet="NewsPostTb">
+                <ScalarProperty Name="Photo3" ColumnName="Photo3" />
+                <ScalarProperty Name="Photo2" ColumnName="Photo2" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="NewsPostTbID" ColumnName="NewsPostTbID" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="NewsPostID" ColumnName="NewsPostID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationTBs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.NotificationTB">
+              <MappingFragment StoreEntitySet="NotificationTB">
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="NotificationTbID" ColumnName="NotificationTbID" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="NotificationID" ColumnName="NotificationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserTbs">
+            <EntityTypeMapping TypeName="Tafias_blogModel.UserTb">
+              <MappingFragment StoreEntitySet="UserTb">
+                <ScalarProperty Name="Date_Time" ColumnName="Date_Time" />
+                <ScalarProperty Name="Other_isues" ColumnName="Other_isues" />
+                <ScalarProperty Name="UserChatId" ColumnName="UserChatId" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="body_commet" ColumnName="body_commet" />
+                <ScalarProperty Name="client_comment" ColumnName="client_comment" />
+                <ScalarProperty Name="His_comment" ColumnName="His_comment" />
+                <ScalarProperty Name="Her_Comment" ColumnName="Her_Comment" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="Users" ColumnName="Users" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

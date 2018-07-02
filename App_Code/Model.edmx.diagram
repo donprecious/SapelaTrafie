@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9c2a615560e64971b3ba1b199cf79386" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="Tafias_blogModel.Breaking_NewsTb" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.Connection_Tb" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.HealthTb" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.PoliticsTb" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.QuotesTb" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.Sapele_NewsTb" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.SportTb" Width="1.5" PointX="0.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tafias_blogModel.VideoTb" Width="1.5" PointX="0.75" PointY="27.375" IsExpanded="true" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_Breaking_NewsTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_HealthTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_PoliticsTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_QuotesTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_Sapele_NewsTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_SportTb" ManuallyRouted="false" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_VideoTb" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Tafias_blogModel.RegistrationTb" Width="1.5" PointX="5.375" PointY="4" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_RegistrationTb" />
+        <EntityTypeShape EntityType="Tafias_blogModel.AllNewsTb" Width="1.5" PointX="7.375" PointY="4" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_AllNewsTb" />
+        <EntityTypeShape EntityType="Tafias_blogModel.commentTb" Width="1.5" PointX="3.375" PointY="8" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_commentTb" />
+        <EntityTypeShape EntityType="Tafias_blogModel.FollowTb" Width="1.5" PointX="0.75" PointY="40.125" />
+        <EntityTypeShape EntityType="Tafias_blogModel.messageTb" Width="1.5" PointX="0.75" PointY="44" />
+        <EntityTypeShape EntityType="Tafias_blogModel.NewsPostTb" Width="1.5" PointX="0.75" PointY="31.75" />
+        <EntityTypeShape EntityType="Tafias_blogModel.NotificationTB" Width="1.5" PointX="0.75" PointY="36.25" />
+        <EntityTypeShape EntityType="Tafias_blogModel.UserTb" Width="1.5" PointX="5.375" PointY="9" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_FollowTb" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_messageTb" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_NewsPostTb" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_NotificationTB" />
+        <AssociationConnector Association="Tafias_blogModel.FK_Connection_Tb_UserTb" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

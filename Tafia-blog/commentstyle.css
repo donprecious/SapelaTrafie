@@ -1,0 +1,224 @@
+﻿body {
+}
+@media (min-width: 736px) {
+     .more li{
+                   display:inline-block;
+                   padding:2px;
+                }
+             @media (min-width: 736px) {
+                
+             .Admin-image{
+                 border:1px solid #ddd;
+                 border-radius:50%;
+             }
+                .footer-content{
+              
+                  
+                    border-radius:4px;
+                         border:1px solid #ddd;
+                         width:100%;
+                }
+                .footer-content:hover{
+                      background:#eaf5fd;
+                }
+                .footer-content:focus{
+                      background:#eaf5fd;
+                }
+                .comment-like{
+                      margin:12px;
+                    padding:10px;
+                    border-radius:4px;
+                }
+                .more li{
+                   display:inline-block;
+                   padding:4px;
+                }
+                .news-content{
+                    display:inline;
+                 
+                    margin:5px;
+                }
+                /*.block-post{
+                   background:#fff; #eaf5fd;#e6ecf0;
+                   border:1px solid #ddd;
+               margin-bottom:60px;
+             width:600px;
+             display:block;
+         justify-content:center;
+         display:grid;
+         grid-template:'1ff' '1ff' '1ff' '1ff';
+             transform:translate(30%);
+       
+                   margin:auto;
+                }*/
+                .block-post:focus{
+                      background:#eaf5fd;
+                }
+               .block-post:hover{
+                   background:#f5f8fa;
+                   border-radius:0;
+
+               }
+                .adverta-1{
+                        
+                  
+                }
+                .name{
+                    font-weight:600;
+                    font-size:15px;
+                }
+              
+                .headline-content p{
+                    /*font-size:16px;
+                    font-weight:100;*/
+                   color:#444;
+                }
+                .footer-items{
+                    margin:7px;
+                }
+                time ,strong{
+                    font-size:12px;
+                }
+                .image-container{
+                    margin:5px;
+                    
+                }
+                .image-container .post-image{
+                
+                 border-radius:3px;
+                    position:relative;
+                  object-fit:cover;
+                  object-position: center;
+                     webkit-background-size:cover;
+                     -o-background-size:cover;
+                     background-size:cover;
+                width:100%;
+
+              
+          
+                }
+                .adverter{
+                    margin-left:60px;
+                }
+                .alt{
+                     background:#eaf5fd;
+                }
+                .caption{
+                    font:300;
+                    
+                    font-size:14px;
+                 white-space:nowrap;
+                letter-spacing:1.02px;
+                }
+                .header{
+                   margin:5px;
+                   font-weight:600;
+
+                }
+                 .header span,.adminname{
+                        color:#1DA1F2;
+                        margin-left:10px;
+                 }
+                 .footer-items image{
+                     width:100%;
+                     height:100%;
+                 }
+                 .footer-items image{
+                     position:relative;
+                     font:0;
+                 }
+                 .footer-items{
+
+                 }
+                 .header-content{
+                     border-radius:3px 3px 0 0;
+                 }
+             }
+
+
+                 .myimage{
+                  
+                 }
+                .headline-txt{
+                     font-size: 17px;
+                 }
+
+               
+                 .post-block-box{
+                     width:500px ;
+                     margin:auto;
+                     margin-bottom:30px;
+
+                 }
+                 .post-block-content{
+                     background-color:#fff;
+                     margin:12px;
+                     border-radius:3px;
+                     
+                 }
+                 .imageconter{
+                     margin:1px;
+                     padding-top:10px;
+                   position:absolute
+                 }
+                 .Admin-Image{
+                     border:1px solid #ddd;
+                     border-radius:50%;
+
+                 }
+                 .header-item{
+                   padding-left:10px;
+                     padding-top:20px;
+                     margin:0 50px;
+                 }
+                .stname{
+                     color:#555;
+                 }
+
+                .gallery-conter{
+             
+                  border:1px solid #ddd;
+                   
+                }
+                .gallery-area{
+                    margin:2px;
+                   height:auto;
+                    float:left;
+                    max-width:232.50px;
+                     margin-bottom:3px;
+                     width:100%;
+                }
+            
+                .gallery-area-3 {
+                      margin:3px;
+                 
+                      height:auto;
+                    max-width:530px;
+                    
+                    
+                }
+                .image-1{
+                    width:100%;
+                }
+               .image{
+                   width:100%;
+                   height:207px;
+                   margin-bottom:2px;
+                 
+                }
+                .time-conter{
+                    color:#999;
+                    font-size:14px;
+               
+                }
+               
+                .comment-like{
+                      margin:12px;
+                    padding:10px;
+                    border-radius:4px;
+                }
+                .more li{
+                   display:inline-block;
+                   padding:4px;
+                }
+             }

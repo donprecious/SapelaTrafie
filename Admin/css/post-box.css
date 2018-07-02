@@ -1,0 +1,173 @@
+﻿body {
+    background:#fafafa;
+}
+.post-box-ui{
+
+    background:#fff;
+    width:600px;
+    border-radius:2px;       
+        margin-left: -1px;
+        margin-right: -1px;
+        margin:auto;
+
+       margin-top: 20px;
+        margin-bottom: 60px;
+       border: 1px solid #dddfe2;
+        border-radius: 4px;
+}
+.post-box-ui{
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  
+}
+.top-control-clicks{
+ 
+       
+ 
+    font-weight: bold;
+    padding: 2px 6px;
+        background-color: #f6f7f9;
+   
+    border-radius: 2px 2px 0 0;
+    font-weight: bold;
+  
+}
+
+
+}
+.top-control-clicks span .btn-text{
+    font-size:14px;
+}
+.uploaditem{
+    display:none;
+}
+.post-control-box{
+     
+  
+  
+  
+    padding: 10px;
+}
+
+.image-area img{
+    
+    border-radius:50%;
+   
+  
+    height:53px;
+    width:50px;
+   position:absolute;
+       
+          transform:translate(-5%);
+     
+       
+                              
+}
+
+.post-text-content{
+    border-bottom: 1px solid #dddfe2;
+
+}
+.post_txt{
+    
+     transition:3s;
+     outline:0;
+   
+    border:none;
+  color: #262626;
+  font-size: inherit;
+  width:90%;
+   box-sizing:border-box;
+    padding:10px 20px;
+      resize: none;
+  transform:translate(10%);
+  overflow:hidden;
+  font-weight: bold;
+ font-family: "AvenirNextLTPro-Ultlt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+       display:inline-block;             
+}
+.how-you-fell{
+      border-top: 1px solid #dddfe2;
+      background-color: #f6f7f9;
+    margin: 0;
+}
+.how-you-fell-control{
+    padding:10px 0;
+     border-radius:4px;
+}
+.how-you-fell-control:hover{
+     background-color: #e9ebee;
+     padding:10px 0;
+     border-radius:4px;
+}
+.felling-text{
+    
+     outline:0;
+    font-size:13px;
+    border: 1px dotted #ddd;
+  color: #262626;
+  width:90%;
+   box-sizing:border-box;
+    padding:2px ;
+      resize: none;
+  transform:translate(10%);
+  overflow:hidden;
+  
+ font-family: "AvenirNextLTPro-Ultlt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+       display:inline-block; 
+}
+.box-u-bottom img{
+      border-radius:50%;
+    border:1px solid #555;
+  
+    height:53px;
+    width:50px;
+  
+       
+          transform:translate(15%);
+
+}
+.post-btn{
+    padding:5px;
+  
+     
+width: 100%;
+
+ display: inline-block;
+  color:#fff;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.btn-container{
+    padding:  12px ;
+
+
+  font-size: 12px;
+ 
+ 
+ display: inline-block;
+  
+  
+}

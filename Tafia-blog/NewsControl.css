@@ -1,0 +1,235 @@
+﻿body {
+}
+.post-block {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1.425em;
+  padding-top: 1.425em;
+  border-top: 2px solid #f1f1f1;
+  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transition: all .2s ease .1s;
+  transition: all .2s ease .1s;
+  opacity: 1;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+user agent stylesheetarticle, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+@media screen and (min-width: 850px) {
+    .post-block__header {
+        -webkit-flex-basis: 28%;
+        -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+        min-width: 0;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+    }
+
+    TechCrunch.htmlmedia="all" .post-block__header {
+        -webkit-flex-basis: 69%;
+        -ms-flex-preferred-size: 69%;
+        flex-basis: 69%;
+    }
+
+    article, aside, footer, header, nav, section {
+        display: block;
+    }
+
+    *, :after, :before {
+        background-repeat: no-repeat;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .post-block--funding .post-block__content, .post-block--image .post-block__content, .post-block--sponsored--has-image .post-block__content {
+        -webkit-flex-basis: 32%;
+        -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    }
+
+    @media screen and (min-width: 850px) {
+        .post-block__content {
+            font-size: 14px;
+            font-size: .875rem;
+            -webkit-flex-basis: 67.5%;
+            -ms-flex-preferred-size: 67.5%;
+            flex-basis: 67.5%;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            display: block;
+            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+            line-height: 1.43;
+            color: #777;
+        }
+
+    .post-block__content {
+            display: none;
+        }
+
+        *, :after, :before {
+            background-repeat: no-repeat;
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+    }
+}
+@media screen and (min-width: 850px) {
+    .post-block__title {
+        margin-bottom: 10px;
+    }
+
+    .post-block__title {
+        font-size: 22px;
+        font-size: 1.375rem;
+        margin-top: 0;
+        margin-bottom: .25em;
+        font-family: aktiv-grotesk,sans-serif;
+        font-weight: 800;
+        line-height: 1.09;
+        letter-spacing: -.7px;
+        color: #000;
+    }
+
+    .ad-placeholder, h2 {
+        font-size: 26px;
+        font-size: 1.625rem;
+        font-weight: 700;
+        letter-spacing: -.06px;
+    }
+
+    .ad-placeholder, h1, h2, h3, h4, h5, h6 {
+        font-family: aktiv-grotesk,sans-serif;
+        letter-spacing: -.02em;
+        line-height: 1.2;
+        margin: .2em 0;
+    }
+
+    *, :after, :before {
+        background-repeat: no-repeat;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    user agent stylesheeth2 {
+        display: block;
+        font-size: 1.5em;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    .post-block__title__link {
+        color: inherit;
+    }
+
+    a, li a, p a {
+        text-decoration: none;
+    }
+
+    TechCrunch.htmlmedia="all" [tabindex], a, area, button, input, label, select, summary, textarea {
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+
+    a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    *, :after, :before {
+        background-repeat: no-repeat;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    user agent stylesheeta:-webkit-any-link {
+        color: -webkit-link;
+        text-decoration: underline;
+        cursor: auto;
+    }
+
+    Inherited from h2.post-block__title TechCrunch.htmlmedia="all" .post-block__title {
+        font-size: 22px;
+        font-size: 1.375rem;
+        margin-top: 0;
+        margin-bottom: .25em;
+        font-family: aktiv-grotesk,sans-serif;
+        font-weight: 800;
+        line-height: 1.09;
+        letter-spacing: -.7px;
+        color: #000;
+    }
+
+    .ad-placeholder, h2 {
+        font-size: 26px;
+        font-size: 1.625rem;
+        font-weight: 700;
+        letter-spacing: -.06px;
+    }
+
+    .ad-placeholder, h1, h2, h3, h4, h5, h6 {
+        font-family: aktiv-grotesk,sans-serif;
+        letter-spacing: -.02em;
+        line-height: 1.2;
+        margin: .2em 0;
+    }
+}
+.river-byline {
+  font-size: 13px;
+  font-size: .8125rem;
+  font-family: aktiv-grotesk,sans-serif;
+  line-height: 1.54;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.river-byline__time {
+  display: inline-block;
+  margin-right: .8em;
+  color: #777;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+Inherited from div.river-byline
+
+.river-byline {
+  font-size: 13px;
+  font-size: .8125rem;
+  font-family: aktiv-grotesk,sans-serif;
+  line-height: 1.54;
+}
